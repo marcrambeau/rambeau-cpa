@@ -1,0 +1,177 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box model hack */
+* {
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.alignright {
+    float: right;
+    padding: 0 0 10px 10px; /* Note padding around right-floated image */
+}
+
+.alignleft {
+    float: left;
+    padding: 0 10px 10px 0; /* Note padding around left-floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    background: #fff;
+    font-family: "Maitree", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+    background-color: #fff;
+    border-bottom: .5px solid #eee;
+    text-transform: uppercase;
+    width: 100%;
+    height: 3.5rem;
+    padding: 1rem;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    float: left;
+}
+
+header nav {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    display: none;
+    float: right;
+}
+
+.banner {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-1 {
+    background-image: url("../images/bg-1.jpg");
+    padding-top: 3.5rem;
+    padding-bottom: 10.5rem;
+}
+
+.bg-2 {
+    background-image: url("../images/bg-2.jpg");
+    padding-bottom: 33.333vh;
+}
+
+.bg-3 {
+    background-image: url("../images/bg-3.jpg");
+    padding-bottom: 33.333vh;
+}
+
+.bg-4 {
+    background-image: url("../images/bg-4.jpg");
+    padding-bottom: 33.333vh;
+}
+
+section {
+    margin: auto 1rem;
+}
+
+section h1 {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.333rem;
+    margin: 1rem auto 0.5rem auto;
+}
+
+footer {
+    background-color: #fff;
+    border-top: .5px solid #eee;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer nav ul {
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    height: 3.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media only screen and (min-width: 40rem) and (max-width: 59.9375rem) {
+    header nav, header nav ul li {
+        display: inline-block;
+    }
+
+    footer nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 60rem) and (max-width: 89.9375rem) {
+    header nav {
+        display: inline-block;
+    }
+
+    footer nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 90rem) {
+    .container {
+        max-width: 90rem;
+    }
+
+    header nav {
+        display: inline-block;
+    }
+
+    footer nav {
+        display: none;
+    }
+}
+
+*/
